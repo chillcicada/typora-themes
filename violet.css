@@ -13,6 +13,13 @@
 /* Font */
 @import url('./violet/font.css');
 
+/* Palette */
+@import url('./violet/palette.css');
+
+/* Texture */
+@import url('./violet/texture.css');
+
+/* Variables */
 :root {
   --bg-color: #f3e5f5;
   --side-bar-bg-color: #f2f4ff;
@@ -54,11 +61,27 @@
 
   --mark-bg-color: #fffee9;
 
+  --alert-important-border-color: #ff8a80;
+  --alert-important-text-color: #ff8a80;
+
+  --alert-tip-border-color: #64b5f6;
+  --alert-tip-text-color: #64b5f6;
+
+  --alert-note-border-color: #4db6ac;
+  --alert-note-text-color: #4db6ac;
+
+  --alert-warning-border-color: #ffca28;
+  --alert-warning-text-color: #ffca28;
+
+  --alert-caution-border-color: #ff7043;
+  --alert-caution-text-color: #ff7043;
+
   --text: 'Livvic Regular', '仓耳今楷03-W03', sans-serif;
   --title: 'Merriweather Light', 'Adobe Garamond Regular', '仓耳今楷03-W03', serif;
   --monospace: 'Roboto Mono', 'LXGWWenKaiMono-Regular', monospace;
 }
 
+/* Reset */
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -70,7 +93,6 @@ html {
 // for better line spacing, it's recommended to enable the display of <br/>
 body {
   max-width: 1000px;
-  background-color: var(--bg-color);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   background: var(--bg-color);
@@ -81,11 +103,19 @@ body {
   overflow-x: hidden;
 }
 
+content,
+#write,
+#typora-source,
+footer {
+  background-image: var(--texture);
+}
+
 /* Page */
 #write {
   font-family: var(--text);
   margin: 0 auto;
   padding: 1rem 4rem;
+  max-width: 960px;
 }
 
 #write p {
@@ -579,10 +609,57 @@ footer.ty-footer {
   background: var(--bg-color);
 }
 
-/* YAML */
+/* #region YAML */
 #write pre.md-meta-block {
   font-family: var(--monospace);
-  background-color: var(--code-bg-color);
-  border-radius: 2px;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: var(--hr-color);
   font-size: 0.9rem;
 }
+/* #endregion YAML */
+
+/* #region Github Alert */
+.md-alert.md-alert-important {
+  border-left-color: var(--alert-important-border-color);
+}
+
+.md-alert-text-important {
+  color: var(--alert-important-text-color);
+}
+
+.md-alert.md-alert-warning {
+  border-left-color: var(--alert-warning-border-color);
+}
+
+.md-alert-text-warning {
+  color: var(--alert-warning-text-color);
+}
+
+.md-alert.md-alert-tip {
+  border-left-color: var(--alert-tip-border-color);
+}
+
+.md-alert-text-tip {
+  color: var(--alert-tip-text-color);
+}
+
+.md-alert.md-alert-note {
+  border-left-color: var(--alert-note-border-color);
+}
+
+.md-alert-text-note {
+  color: var(--alert-note-text-color);
+}
+
+.md-alert.md-alert-caution {
+  border-left-color: var(--alert-caution-border-color);
+}
+
+.md-alert-text-caution {
+  color: var(--alert-caution-text-color);
+}
+/* #endregion Github Alert */
