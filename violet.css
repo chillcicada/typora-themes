@@ -1,0 +1,588 @@
+/**
+ * Typora-Theme: Violet
+ * @author chillcicada
+ * @link https://github.com/chillcicada
+ * @version 0.0.9rc
+ * @license MIT
+ * @repo https://github.com/chillcicada/typora-theme-violet
+ * @note The repo is deprecated since v0.0.9, please visit the new repo: https://github.com/chillcicada/typora-themes
+ */
+
+@charset "UTF-8";
+
+/* Font */
+@import url('./violet/font.css');
+
+:root {
+  --bg-color: #f3e5f5;
+  --side-bar-bg-color: #f2f4ff;
+  --title-color: #b388ff;
+  --text-color: #212121;
+  --select-text-bg-color: #fafafa;
+  --item-hover-bg-color: #fce4ec;
+  --control-text-color: var(--side-bar-bg-color);
+  --control-text-hover-color: var(--side-bar-bg-color);
+  --title-border-color: #512da8;
+  --title-before-color: #aaaaaa;
+  --em-color: #41565f;
+  --hr-color: #a08ac9;
+
+  --shadow-color: #dddddd;
+  --image-btn-bg-color: ;
+  --image-btn-bf-bg-color: #fce4ec;
+
+  --link-color: #26a69a;
+  --link-hover-color: #1de9b6;
+  --link-bottom-color: #bbbbbb;
+
+  --code-color: #37474f;
+  --code-bg-color: #fbedfd;
+  --inline-code-bg-color: #f9ebfb;
+
+  --context-menu-bg-color: var(--side-bar-bg-color);
+  --dropdown-menu-bg-color: #888888;
+  --megamenu-bg-color: var(--side-bar-bg-color);
+
+  --quote-color: #455a64;
+  --quote-bg-color: #ede7f6;
+  --quote-side-color: #b39ddb;
+
+  --table-border-color: var(--code-color);
+  --table-color: ;
+
+  --del-text-color: #607d8b;
+
+  --mark-bg-color: #fffee9;
+
+  --text: 'Livvic Regular', '仓耳今楷03-W03', sans-serif;
+  --title: 'Merriweather Light', 'Adobe Garamond Regular', '仓耳今楷03-W03', serif;
+  --monospace: 'Roboto Mono', 'LXGWWenKaiMono-Regular', monospace;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+}
+
+// for better line spacing, it's recommended to enable the display of <br/>
+body {
+  max-width: 1000px;
+  background-color: var(--bg-color);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: var(--bg-color);
+  background: var(--bg-color);
+  fill: currentColor;
+  line-height: 1.625rem;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Page */
+#write {
+  font-family: var(--text);
+  margin: 0 auto;
+  padding: 1rem 4rem;
+}
+
+#write p {
+  line-height: 1.625rem;
+  word-spacing: 0.05rem;
+}
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Sidebar */
+#typora-sidebar,
+.typora-node #typora-sidebar {
+  color: var(--text-color);
+  background-color: var(--side-bar-bg-color);
+  shadow: 3px 0px 10px var(--shadow-color);
+  opacity: 0.5;
+  backdrop: blur(2px);
+}
+
+.sidebar-content-content {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Print */
+@media print {
+  html {
+    font-size: 1.25rem;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    page-break-inside: avoid;
+    word-wrap: break-word;
+  }
+
+  #write {
+    max-width: 100%;
+  }
+
+  @page {
+    /* PDF output size */
+    size: A3;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* PageBreak when h2 */
+// when u dont use this u can comment it
+@media print {
+  h2 {
+    page-break-before: always;
+  }
+
+  h2:first-of-type {
+    page-break-before: avoid;
+  }
+}
+
+/* TOC */
+#write a.md-toc-inner {
+  line-height: 1.6;
+  white-space: pre-line;
+  border-bottom: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.md-toc-h1 .md-toc-inner {
+  margin-left: 0;
+  font-weight: normal;
+}
+
+header,
+.context-menu,
+.megamenu-content,
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+  visibility: visible;
+}
+
+/* Title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--text);
+  cursor: text;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+h1 {
+  text-align: center !important;
+  font-size: 2.25rem;
+  line-height: 1.35;
+}
+
+h1:after {
+  content: '';
+  display: block;
+  margin: 0.2rem auto 0;
+  max-width: 6rem;
+  height: 1px;
+  border-bottom: 2px solid var(--title-border-color);
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  text-align: left;
+  border-bottom: 1px solid var(--title-border-color);
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1;
+  text-align: left;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1;
+  text-align: left;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: left;
+}
+
+h1 tt,
+h1 code,
+h2 tt,
+h2 code,
+h3 tt,
+h3 code,
+h4 tt,
+h4 code,
+h5 tt,
+h5 code,
+h6 tt,
+h6 code {
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title);
+}
+
+#write > h3.md-focus:before {
+  border: 1px solid var(--title-border-color);
+  font-size: 1.25rem;
+  font-family: var(--text);
+  left: -1.875rem;
+  top: 0;
+  color: var(--title-before-color);
+}
+
+#write > h4.md-focus:before {
+  border: 1px solid var(--title-border-color);
+  font-size: 1rem;
+  font-family: var(--text);
+  left: -1.75rem;
+  top: 0;
+  color: var(--title-before-color);
+}
+
+#write > h5.md-focus:before {
+  border: 1px solid var(--title-border-color);
+  font-size: 0.8125rem;
+  font-family: var(--text);
+  left: -1.625rem;
+  top: 0;
+  color: var(--title-before-color);
+}
+
+#write > h6.md-focus:before {
+  border: 1px solid var(--title-border-color);
+  font-size: 0.75rem;
+  font-family: var(--text);
+  left: -1.5rem;
+  top: 0;
+  color: var(--title-before-color);
+}
+
+/* Link */
+a {
+  color: var(--link-color);
+  text-decoration: underline var(--link-bottom-color);
+  outline: 0;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+  outline: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+#write h1:hover a.anchor,
+#write h2:hover a.anchor,
+#write h3:hover a.anchor,
+#write h4:hover a.anchor,
+#write h5:hover a.anchor,
+#write h6:hover a.anchor {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Em */
+#write em {
+  font-family: var(--text);
+  font-style: italic;
+  color: var(--em-color);
+}
+
+/* Hr */
+#write hr {
+  border-color: var(--hr-color);
+  border-top-width: 2px;
+}
+
+/* Quote */
+blockquote {
+  font-family: var(--text);
+  border-left: 4px solid var(--quote-side-color);
+  padding: 10px 15px;
+  color: var(--quote-color);
+  background-color: var(--quote-bg-color);
+}
+
+/* Table */
+table {
+  align: center;
+  margin-bottom: 1.25rem;
+  margin: 0.8em 0;
+}
+
+table tr {
+  border: 1px solid var(--table-border-color);
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n),
+thead {
+  background-color: var(--table-color);
+}
+
+table th {
+  font-weight: bold;
+  border: 1px solid var(--table-border-color);
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table td {
+  border: 1px solid var(--table-border-color);
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table th:first-child,
+table td:first-child {
+  margin-top: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+table th:last-child,
+table td:last-child {
+  margin-bottom: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/* List */
+#write li > ol,
+#write li > ul {
+  margin: 0 0;
+}
+
+#write li p.first {
+  display: inline-block;
+}
+
+#write ul,
+#write ol {
+  padding-left: 2rem;
+}
+
+#write ul:first-child,
+#write ol:first-child {
+  margin-top: 0;
+}
+
+#write ul:last-child,
+#write ol:last-child {
+  margin-bottom: 0;
+}
+
+#write ol li,
+#write ul li {
+  padding-left: 0.1rem;
+}
+
+/* Picture */
+.md-image-btn.selected,
+.md-image-btn:hover {
+  background-color: var(--image-btn-bg-color);
+}
+
+.md-image-btn {
+  background-color: var(--image-btn-bf-bg-color);
+}
+
+// Picture Shadow
+.md-image > .md-meta {
+  border-radius: 4px;
+  padding: 2px 0 0 4px;
+  font-size: 1rem;
+  color: inherit;
+}
+
+img[alt|='shadow'] {
+  box-shadow: 3px 3px 10px var(--shadow-color);
+}
+
+/* Code */
+#write code,
+#write tt {
+  border: 0;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-family: var(--monospace);
+  font-size: 1rem;
+  color: var(--code-color);
+  background-color: var(--inline-code-bg-color);
+  margin: 0 2px;
+  word-wrap: normal;
+}
+
+#write .md-fences {
+  border: 0;
+  -webkit-font-smoothing: initial;
+  line-height: 1.43rem;
+  border-radius: 4px;
+  margin: 0.8rem 0 !important;
+  padding: 0.3rem 0 !important;
+  background-color: var(--code-bg-color);
+  font-size: 0.9rem;
+  word-wrap: normal;
+  font-family: var(--monospace);
+}
+
+#write .cm-s-inner .cm-variable {
+  color: var(--text-color);
+}
+
+#write .cm-s-inner {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+#write .md-footnote {
+  color: var(--code-color);
+  background-color: var(--inline-code-bg-color);
+}
+
+.md-diagram-panel {
+  position: static !important;
+}
+
+/* Delete */
+#write del {
+  padding: 1px 2px;
+  background-color: transparent;
+}
+
+#write del:hover {
+  color: var(--del-text-color);
+  text-decoration: none;
+}
+
+/* Mark */
+#write mark {
+  color: var(--text-color);
+  background-color: var(--mark-bg-color);
+  font-weight: 500;
+  border: 0;
+  radius: 2px;
+  padding: 2px 4px;
+  margin: 0 2px;
+}
+
+/* Underline */
+#write u {
+  padding: 1px;
+  color: var(--text-color);
+}
+
+/* RT */
+#write rt {
+  font-family: var(--text), sans-serif;
+}
+
+/* Megamenu */
+.long-btn {
+  border-radius: 0.25rem;
+}
+
+#recent-file-panel-action-btn-container {
+  border-radius: 0.25rem;
+}
+
+.megamenu-content,
+.megamenu-opened header {
+  background: var(--bg-color);
+}
+
+.context-menu,
+#spell-check-panel,
+#footer-word-count-info {
+  background-color: var(--side-bar-bg-color);
+}
+
+.context-menu.dropdown-menu .divider,
+.dropdown-menu .divider {
+  background-color: var(--side-bar-bg-color);
+  opacity: 1;
+}
+
+.megamenu-menu-panel input[type='text'] {
+  background: inherit;
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+/* Footer */
+footer {
+  color: inherit;
+  font-family: var(--text);
+}
+
+@media (max-width: 1000px) {
+  footer {
+    border-top: none;
+  }
+
+  footer:hover {
+    color: inherit;
+  }
+}
+
+footer.ty-footer {
+  border: 0;
+  background-color: var(--bg-color);
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+#footer-word-count:hover,
+.ty-show-word-count #footer-word-count {
+  background: var(--bg-color);
+}
+
+/* YAML */
+#write pre.md-meta-block {
+  font-family: var(--monospace);
+  background-color: var(--code-bg-color);
+  border-radius: 2px;
+  font-size: 0.9rem;
+}
