@@ -1,0 +1,25 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.venv": true,
+    "github": true,
+    "newsprint": true,
+    "night": true,
+    "old-themes": true,
+    "pixyll": true,
+    "github.css": true,
+    "newsprint.css": true,
+    "night.css": true,
+    "pixyll.css": true,
+    "Readme.md": true,
+    "whitey.css": true
+  },
+  "explorerExclude.backup": {},
+  "cSpell.enabled": false
+}

@@ -8,7 +8,7 @@ This repo contains my self made and used themes.
 
 [docs](./../docs/violet.md)
 
-![snapshot](./_imgs/snapshot_2024-10-03.png)
+![snapshot](https://img.chillcicada.com/i/2024/10/03/66fe905becc8d.png)
 
 ## License
 
