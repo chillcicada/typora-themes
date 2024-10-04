@@ -13,3 +13,6 @@
 
 # temp
 .temp
+
+# js
+node_modules

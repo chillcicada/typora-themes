@@ -373,7 +373,7 @@ blockquote {
   border-left: 4px solid var(--quote-side-color);
   padding: 10px 15px;
   color: var(--quote-color);
-  background-color: var(--quote-bg-color);
+  background-color: transparent;
 }
 
 /* Table */
@@ -519,7 +519,6 @@ img[alt|='shadow'] {
 
 /* Delete */
 #write del {
-  padding: 1px 2px;
   background-color: transparent;
 }
 
@@ -576,7 +575,7 @@ img[alt|='shadow'] {
   opacity: 1;
 }
 
-.megamenu-menu-panel input[type='text'] {
+.megamenu-menu-panel input[type="text"] {
   background: inherit;
   border: 0;
   border-bottom: 1px solid;
