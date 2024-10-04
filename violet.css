@@ -11,13 +11,13 @@
 @charset "UTF-8";
 
 /* Font */
-@import url('./violet/font.css');
+@import url("./violet/font.css");
 
 /* Palette */
-@import url('./violet/palette.css');
+@import url("./violet/palette.css");
 
 /* Texture */
-@import url('./violet/texture.css');
+@import url("./violet/texture.css");
 
 /* Variables */
 :root {
@@ -76,9 +76,10 @@
   --alert-caution-border-color: #ff7043;
   --alert-caution-text-color: #ff7043;
 
-  --text: 'Livvic Regular', '仓耳今楷03-W03', sans-serif;
-  --title: 'Merriweather Light', 'Adobe Garamond Regular', '仓耳今楷03-W03', serif;
-  --monospace: 'Roboto Mono', 'LXGWWenKaiMono-Regular', monospace;
+  --text: "Livvic Regular", "仓耳今楷03-W03", sans-serif;
+  --title: "Merriweather Light", "Adobe Garamond Regular", "仓耳今楷03-W03",
+    serif;
+  --monospace: "Roboto Mono", "LXGWWenKaiMono-Regular", monospace;
 }
 
 /* Reset */
@@ -103,6 +104,11 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  background-color: transparent;
+}
+
+header,
 content,
 #write,
 #typora-source,
@@ -227,7 +233,7 @@ h1 {
 }
 
 h1:after {
-  content: '';
+  content: "";
   display: block;
   margin: 0.2rem auto 0;
   max-width: 6rem;
@@ -468,7 +474,7 @@ table td:last-child {
   color: inherit;
 }
 
-img[alt|='shadow'] {
+img[alt|="shadow"] {
   box-shadow: 3px 3px 10px var(--shadow-color);
 }
 
@@ -532,10 +538,6 @@ img[alt|='shadow'] {
   color: var(--text-color);
   background-color: var(--mark-bg-color);
   font-weight: 500;
-  border: 0;
-  radius: 2px;
-  padding: 2px 4px;
-  margin: 0 2px;
 }
 
 /* Underline */
@@ -662,3 +664,230 @@ footer.ty-footer {
   color: var(--alert-caution-text-color);
 }
 /* #endregion Github Alert */
+
+/* #region Img */
+body #write img {
+  display: block;
+  box-shadow: -5px 5px 10px #e6e6e6, 5px -5px 10px #f0f0f0;
+}
+
+body #write img[alt~="shadow"] {
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+body #write img[alt~="inline"] {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+body #write img[alt~="0"] {
+  width: 0%;
+  height: 0%;
+}
+
+body #write img[alt~="5"] {
+  width: 5%;
+  height: 5%;
+}
+
+body #write img[alt~="10"] {
+  width: 10%;
+  height: 10%;
+}
+
+body #write img[alt~="15"] {
+  width: 15%;
+  height: 15%;
+}
+
+body #write img[alt~="20"] {
+  width: 20%;
+  height: 20%;
+}
+
+body #write img[alt~="25"] {
+  width: 25%;
+  height: 25%;
+}
+
+body #write img[alt~="30"] {
+  width: 30%;
+  height: 30%;
+}
+
+body #write img[alt~="35"] {
+  width: 35%;
+  height: 35%;
+}
+
+body #write img[alt~="40"] {
+  width: 40%;
+  height: 40%;
+}
+
+body #write img[alt~="45"] {
+  width: 45%;
+  height: 45%;
+}
+
+body #write img[alt~="50"] {
+  width: 50%;
+  height: 50%;
+}
+
+body #write img[alt~="55"] {
+  width: 55%;
+  height: 55%;
+}
+
+body #write img[alt~="60"] {
+  width: 60%;
+  height: 60%;
+}
+
+body #write img[alt~="65"] {
+  width: 65%;
+  height: 65%;
+}
+
+body #write img[alt~="70"] {
+  width: 70%;
+  height: 70%;
+}
+
+body #write img[alt~="75"] {
+  width: 75%;
+  height: 75%;
+}
+
+body #write img[alt~="80"] {
+  width: 80%;
+  height: 80%;
+}
+
+body #write img[alt~="85"] {
+  width: 85%;
+  height: 85%;
+}
+
+body #write img[alt~="90"] {
+  width: 90%;
+  height: 90%;
+}
+
+body #write img[alt~="95"] {
+  width: 95%;
+  height: 95%;
+}
+
+body #write img[alt~="100"] {
+  width: 100%;
+  height: 100%;
+}
+
+body #write img[title~="0"] {
+  width: 0%;
+  height: 0%;
+}
+
+body #write img[title~="5"] {
+  width: 5%;
+  height: 5%;
+}
+
+body #write img[title~="10"] {
+  width: 10%;
+  height: 10%;
+}
+
+body #write img[title~="15"] {
+  width: 15%;
+  height: 15%;
+}
+
+body #write img[title~="20"] {
+  width: 20%;
+  height: 20%;
+}
+
+body #write img[title~="25"] {
+  width: 25%;
+  height: 25%;
+}
+
+body #write img[title~="30"] {
+  width: 30%;
+  height: 30%;
+}
+
+body #write img[title~="35"] {
+  width: 35%;
+  height: 35%;
+}
+
+body #write img[title~="40"] {
+  width: 40%;
+  height: 40%;
+}
+
+body #write img[title~="45"] {
+  width: 45%;
+  height: 45%;
+}
+
+body #write img[title~="50"] {
+  width: 50%;
+  height: 50%;
+}
+
+body #write img[title~="55"] {
+  width: 55%;
+  height: 55%;
+}
+
+body #write img[title~="60"] {
+  width: 60%;
+  height: 60%;
+}
+
+body #write img[title~="65"] {
+  width: 65%;
+  height: 65%;
+}
+
+body #write img[title~="70"] {
+  width: 70%;
+  height: 70%;
+}
+
+body #write img[title~="75"] {
+  width: 75%;
+  height: 75%;
+}
+
+body #write img[title~="80"] {
+  width: 80%;
+  height: 80%;
+}
+
+body #write img[title~="85"] {
+  width: 85%;
+  height: 85%;
+}
+
+body #write img[title~="90"] {
+  width: 90%;
+  height: 90%;
+}
+
+body #write img[title~="95"] {
+  width: 95%;
+  height: 95%;
+}
+
+body #write img[title~="100"] {
+  width: 100%;
+  height: 100%;
+}
+/* #endregion Img */

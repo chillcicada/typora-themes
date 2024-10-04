@@ -7,25 +7,13 @@ version: 0.0.9rc
 
 ## Introduction
 
-> [!important]
->
-> A theme for Typora, named `Violet`, made by [cc](https://github.com/chillcicada).
+A theme for Typora, named `Violet`, made by [cc](https://github.com/chillcicada).
 
-```txt
-man, what can i say!
-```
+More information about the `typora-theme-violet` can be found at the **deprecated** [repo](https://github.com/chillcicada/typora-theme-violet).
 
-More infomation about the `typora-theme-violet` can be found at the **deprecated** [repo](https://github.com/chillcicada/typora-theme-violet).
+## Snapshot
 
-## 介绍
-
-> [!warning]
->
-> 一个 Typora 主题，名为 `Violet`，由 [cc](https://github.com/chillcicada) 制作。
-
-```txt
-男人，什么罐头我说！
-```
+![](https://img.chillcicada.com/i/2024/10/04/66ffc9312a6de.png)
 
 ## Design Prototype
 
