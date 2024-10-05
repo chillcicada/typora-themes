@@ -19,6 +19,9 @@
 /* Texture */
 @import "./violet/texture.css";
 
+/* Image */
+@import "./violet/image.css";
+
 /* Variables */
 :root {
   --bg-color: #f3e5f5;
@@ -94,6 +97,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-rendering: optimizelegibility;
+  font-family: var(--text);
 }
 
 // for better line spacing, it's recommended to enable the display of <br/>
@@ -101,29 +105,27 @@ body {
   max-width: 1000px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  background: var(--bg-color);
-  background: var(--bg-color);
+  background-color: var(--bg-color);
   fill: currentColor;
   line-height: 1.625rem;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
-header {
+header,
+#write,
+#typora-source {
   background-color: transparent;
 }
 
 header,
 content,
-#write,
-#typora-source,
 footer {
   background-image: var(--texture);
 }
 
 /* Page */
 #write {
-  font-family: var(--text);
   margin: 0 auto;
   padding: 1rem 4rem;
   max-width: 960px;
@@ -677,221 +679,3 @@ footer.ty-footer {
   color: var(--alert-caution-text-color);
 }
 /* #endregion Github Alert */
-
-/* #region Img */
-body #write img[alt~="inline"] {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-body #write img[alt~="0"] {
-  width: 0%;
-  height: 0%;
-}
-
-body #write img[alt~="5"] {
-  width: 5%;
-  height: 5%;
-}
-
-body #write img[alt~="10"] {
-  width: 10%;
-  height: 10%;
-}
-
-body #write img[alt~="15"] {
-  width: 15%;
-  height: 15%;
-}
-
-body #write img[alt~="20"] {
-  width: 20%;
-  height: 20%;
-}
-
-body #write img[alt~="25"] {
-  width: 25%;
-  height: 25%;
-}
-
-body #write img[alt~="30"] {
-  width: 30%;
-  height: 30%;
-}
-
-body #write img[alt~="35"] {
-  width: 35%;
-  height: 35%;
-}
-
-body #write img[alt~="40"] {
-  width: 40%;
-  height: 40%;
-}
-
-body #write img[alt~="45"] {
-  width: 45%;
-  height: 45%;
-}
-
-body #write img[alt~="50"] {
-  width: 50%;
-  height: 50%;
-}
-
-body #write img[alt~="55"] {
-  width: 55%;
-  height: 55%;
-}
-
-body #write img[alt~="60"] {
-  width: 60%;
-  height: 60%;
-}
-
-body #write img[alt~="65"] {
-  width: 65%;
-  height: 65%;
-}
-
-body #write img[alt~="70"] {
-  width: 70%;
-  height: 70%;
-}
-
-body #write img[alt~="75"] {
-  width: 75%;
-  height: 75%;
-}
-
-body #write img[alt~="80"] {
-  width: 80%;
-  height: 80%;
-}
-
-body #write img[alt~="85"] {
-  width: 85%;
-  height: 85%;
-}
-
-body #write img[alt~="90"] {
-  width: 90%;
-  height: 90%;
-}
-
-body #write img[alt~="95"] {
-  width: 95%;
-  height: 95%;
-}
-
-body #write img[alt~="100"] {
-  width: 100%;
-  height: 100%;
-}
-
-body #write img[title~="0"] {
-  width: 0%;
-  height: 0%;
-}
-
-body #write img[title~="5"] {
-  width: 5%;
-  height: 5%;
-}
-
-body #write img[title~="10"] {
-  width: 10%;
-  height: 10%;
-}
-
-body #write img[title~="15"] {
-  width: 15%;
-  height: 15%;
-}
-
-body #write img[title~="20"] {
-  width: 20%;
-  height: 20%;
-}
-
-body #write img[title~="25"] {
-  width: 25%;
-  height: 25%;
-}
-
-body #write img[title~="30"] {
-  width: 30%;
-  height: 30%;
-}
-
-body #write img[title~="35"] {
-  width: 35%;
-  height: 35%;
-}
-
-body #write img[title~="40"] {
-  width: 40%;
-  height: 40%;
-}
-
-body #write img[title~="45"] {
-  width: 45%;
-  height: 45%;
-}
-
-body #write img[title~="50"] {
-  width: 50%;
-  height: 50%;
-}
-
-body #write img[title~="55"] {
-  width: 55%;
-  height: 55%;
-}
-
-body #write img[title~="60"] {
-  width: 60%;
-  height: 60%;
-}
-
-body #write img[title~="65"] {
-  width: 65%;
-  height: 65%;
-}
-
-body #write img[title~="70"] {
-  width: 70%;
-  height: 70%;
-}
-
-body #write img[title~="75"] {
-  width: 75%;
-  height: 75%;
-}
-
-body #write img[title~="80"] {
-  width: 80%;
-  height: 80%;
-}
-
-body #write img[title~="85"] {
-  width: 85%;
-  height: 85%;
-}
-
-body #write img[title~="90"] {
-  width: 90%;
-  height: 90%;
-}
-
-body #write img[title~="95"] {
-  width: 95%;
-  height: 95%;
-}
-
-body #write img[title~="100"] {
-  width: 100%;
-  height: 100%;
-}
-/* #endregion Img */

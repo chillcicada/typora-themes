@@ -1,0 +1,321 @@
+/* #region common */
+#write img {
+  border-radius: 0.25rem;
+}
+/* #endregion common */
+
+/* #region layout */
+#write img[alt~="inline"] {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#write img[alt~="left"] {
+  float: left;
+  margin: 0 1rem 0.5rem 0;
+}
+
+#write img[alt~="right"] {
+  float: right;
+  margin: 0 0 0.5rem 1rem;
+}
+/* #endregion layout */
+
+/* #region zoom */
+#write img[alt~="0"] {
+  width: 0%;
+  height: 0%;
+}
+
+#write img[alt~="5"] {
+  width: 5%;
+  height: 5%;
+}
+
+#write img[alt~="10"] {
+  width: 10%;
+  height: 10%;
+}
+
+#write img[alt~="15"] {
+  width: 15%;
+  height: 15%;
+}
+
+#write img[alt~="20"] {
+  width: 20%;
+  height: 20%;
+}
+
+#write img[alt~="25"] {
+  width: 25%;
+  height: 25%;
+}
+
+#write img[alt~="30"] {
+  width: 30%;
+  height: 30%;
+}
+
+#write img[alt~="35"] {
+  width: 35%;
+  height: 35%;
+}
+
+#write img[alt~="40"] {
+  width: 40%;
+  height: 40%;
+}
+
+#write img[alt~="45"] {
+  width: 45%;
+  height: 45%;
+}
+
+#write img[alt~="50"] {
+  width: 50%;
+  height: 50%;
+}
+
+#write img[alt~="55"] {
+  width: 55%;
+  height: 55%;
+}
+
+#write img[alt~="60"] {
+  width: 60%;
+  height: 60%;
+}
+
+#write img[alt~="65"] {
+  width: 65%;
+  height: 65%;
+}
+
+#write img[alt~="70"] {
+  width: 70%;
+  height: 70%;
+}
+
+#write img[alt~="75"] {
+  width: 75%;
+  height: 75%;
+}
+
+#write img[alt~="80"] {
+  width: 80%;
+  height: 80%;
+}
+
+#write img[alt~="85"] {
+  width: 85%;
+  height: 85%;
+}
+
+#write img[alt~="90"] {
+  width: 90%;
+  height: 90%;
+}
+
+#write img[alt~="95"] {
+  width: 95%;
+  height: 95%;
+}
+
+#write img[alt~="100"] {
+  width: 100%;
+  height: 100%;
+}
+
+#write img[title~="0"] {
+  width: 0%;
+  height: 0%;
+}
+
+#write img[title~="5"] {
+  width: 5%;
+  height: 5%;
+}
+
+#write img[title~="10"] {
+  width: 10%;
+  height: 10%;
+}
+
+#write img[title~="15"] {
+  width: 15%;
+  height: 15%;
+}
+
+#write img[title~="20"] {
+  width: 20%;
+  height: 20%;
+}
+
+#write img[title~="25"] {
+  width: 25%;
+  height: 25%;
+}
+
+#write img[title~="30"] {
+  width: 30%;
+  height: 30%;
+}
+
+#write img[title~="35"] {
+  width: 35%;
+  height: 35%;
+}
+
+#write img[title~="40"] {
+  width: 40%;
+  height: 40%;
+}
+
+#write img[title~="45"] {
+  width: 45%;
+  height: 45%;
+}
+
+#write img[title~="50"] {
+  width: 50%;
+  height: 50%;
+}
+
+#write img[title~="55"] {
+  width: 55%;
+  height: 55%;
+}
+
+#write img[title~="60"] {
+  width: 60%;
+  height: 60%;
+}
+
+#write img[title~="65"] {
+  width: 65%;
+  height: 65%;
+}
+
+#write img[title~="70"] {
+  width: 70%;
+  height: 70%;
+}
+
+#write img[title~="75"] {
+  width: 75%;
+  height: 75%;
+}
+
+#write img[title~="80"] {
+  width: 80%;
+  height: 80%;
+}
+
+#write img[title~="85"] {
+  width: 85%;
+  height: 85%;
+}
+
+#write img[title~="90"] {
+  width: 90%;
+  height: 90%;
+}
+
+#write img[title~="95"] {
+  width: 95%;
+  height: 95%;
+}
+
+#write img[title~="100"] {
+  width: 100%;
+  height: 100%;
+}
+/* #endregion zoom */
+
+/* #region opacity */
+#write img[alt~="op-0"] {
+  opacity: 0;
+}
+
+#write img[alt~="op-5"] {
+  opacity: 0.05;
+}
+
+#write img[alt~="op-10"] {
+  opacity: 0.1;
+}
+
+#write img[alt~="op-15"] {
+  opacity: 0.15;
+}
+
+#write img[alt~="op-20"] {
+  opacity: 0.2;
+}
+
+#write img[alt~="op-25"] {
+  opacity: 0.25;
+}
+
+#write img[alt~="op-30"] {
+  opacity: 0.3;
+}
+
+#write img[alt~="op-35"] {
+  opacity: 0.35;
+}
+
+#write img[alt~="op-40"] {
+  opacity: 0.4;
+}
+
+#write img[alt~="op-45"] {
+  opacity: 0.45;
+}
+
+#write img[alt~="op-50"] {
+  opacity: 0.5;
+}
+
+#write img[alt~="op-55"] {
+  opacity: 0.55;
+}
+
+#write img[alt~="op-60"] {
+  opacity: 0.6;
+}
+
+#write img[alt~="op-65"] {
+  opacity: 0.65;
+}
+
+#write img[alt~="op-70"] {
+  opacity: 0.7;
+}
+
+#write img[alt~="op-75"] {
+  opacity: 0.75;
+}
+
+#write img[alt~="op-80"] {
+  opacity: 0.8;
+}
+
+#write img[alt~="op-85"] {
+  opacity: 0.85;
+}
+
+#write img[alt~="op-90"] {
+  opacity: 0.9;
+}
+
+#write img[alt~="op-95"] {
+  opacity: 0.95;
+}
+
+#write img[alt~="op-100"] {
+  opacity: 1;
+}
+/* #endregion opacity */
