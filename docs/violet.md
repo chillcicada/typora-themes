@@ -19,7 +19,15 @@ More information about the `typora-theme-violet` can be found at the **deprecate
 
 ### Typography
 
-TODO
+Title: Merriweather Light, Adobe Garamond Regular, 仓耳今楷03-W03, serif
+
+Italic-Title Merriweather Light, Adobe Garamond Regular, 仓耳今楷03-W03, serif
+
+Text: Livvic Regular, 仓耳今楷03-W03, sans-serif
+
+Italic-Text: Livvic Italic, 仓耳今楷03-W03, sans-serif
+
+Code: Roboto Mono, LXGWWenKaiMono-Regular, monospace
 
 ### Color  Scheme
 

@@ -11,13 +11,13 @@
 @charset "UTF-8";
 
 /* Font */
-@import url("./violet/font.css");
+@import "./violet/font.css";
 
 /* Palette */
-@import url("./violet/palette.css");
+@import "./violet/palette.css";
 
 /* Texture */
-@import url("./violet/texture.css");
+@import "./violet/texture.css";
 
 /* Variables */
 :root {
@@ -77,8 +77,13 @@
   --alert-caution-text-color: #ff7043;
 
   --text: "Livvic Regular", "仓耳今楷03-W03", sans-serif;
+  --italic-text: "Livvic Italic", "仓耳今楷03-W03", sans-serif;
+
   --title: "Merriweather Light", "Adobe Garamond Regular", "仓耳今楷03-W03",
     serif;
+  --italic-title: "Merriweather Light Italic", "Adobe Garamond Regular",
+    "仓耳今楷03-W03", serif;
+
   --monospace: "Roboto Mono", "LXGWWenKaiMono-Regular", monospace;
 }
 
@@ -152,7 +157,7 @@ body > *:last-child {
   color: var(--text-color);
 }
 
-/* Print */
+/* #region Print */
 @media print {
   html {
     font-size: 1.25rem;
@@ -190,6 +195,7 @@ body > *:last-child {
     page-break-before: avoid;
   }
 }
+/* #endregion Print */
 
 /* TOC */
 #write a.md-toc-inner {
@@ -213,14 +219,14 @@ header,
   visibility: visible;
 }
 
-/* Title */
+/* #region Title */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--text);
+  font-family: var(--title);
   cursor: text;
   font-weight: 400;
   color: var(--title-color);
@@ -287,15 +293,6 @@ h6 code {
   font-size: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--title);
-}
-
 #write > h3.md-focus:before {
   border: 1px solid var(--title-border-color);
   font-size: 1.25rem;
@@ -331,6 +328,7 @@ h6 {
   top: 0;
   color: var(--title-before-color);
 }
+/* #endregion Title */
 
 /* Link */
 a {
@@ -362,9 +360,19 @@ a:focus {
 
 /* Em */
 #write em {
-  font-family: var(--text);
-  font-style: italic;
+  font-family: var(--italic-text);
+  font-style: normal;
   color: var(--em-color);
+}
+
+#write h1 em,
+#write h2 em,
+#write h3 em,
+#write h4 em,
+#write h5 em,
+#write h6 em {
+  font-family: var(--italic-title);
+  color: inherit;
 }
 
 /* Hr */
@@ -377,7 +385,8 @@ a:focus {
 blockquote {
   font-family: var(--text);
   border-left: 4px solid var(--quote-side-color);
-  padding: 10px 15px;
+  padding: 0 1rem;
+  margin: 1rem 0;
   color: var(--quote-color);
   background-color: transparent;
 }
@@ -624,6 +633,10 @@ footer.ty-footer {
 /* #endregion YAML */
 
 /* #region Github Alert */
+.md-alert {
+  margin: 1rem 0;
+}
+
 .md-alert.md-alert-important {
   border-left-color: var(--alert-important-border-color);
 }
@@ -666,15 +679,6 @@ footer.ty-footer {
 /* #endregion Github Alert */
 
 /* #region Img */
-body #write img {
-  display: block;
-  box-shadow: -5px 5px 10px #e6e6e6, 5px -5px 10px #f0f0f0;
-}
-
-body #write img[alt~="shadow"] {
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-}
-
 body #write img[alt~="inline"] {
   display: inline-block;
   margin: 0;
