@@ -29,6 +29,6 @@ Italic-Text: Livvic Italic, 仓耳今楷03-W03, sans-serif
 
 Code: Roboto Mono, LXGWWenKaiMono-Regular, monospace
 
-### Color  Scheme
+### Color Scheme
 
 TODO

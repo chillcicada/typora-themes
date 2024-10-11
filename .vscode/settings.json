@@ -18,8 +18,19 @@
     "night.css": true,
     "pixyll.css": true,
     "Readme.md": true,
-    "whitey.css": true
+    "whitey.css": true,
+    "flake.lock": true,
+    ".envrc": true
   },
   "explorerExclude.backup": {},
-  "cSpell.enabled": false
+  "cSpell.enabled": false,
+
+  // typst config
+  "[typst]": {
+    "editor.formatOnSave": true
+  },
+  "tinymist.fontPaths": [
+    "violet/fonts"
+  ],
+  "tinymist.formatterMode": "typstyle"
 }
