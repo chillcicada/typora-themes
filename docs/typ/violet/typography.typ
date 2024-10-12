@@ -1,4 +1,4 @@
-#set page(width: 1920pt, height: 1080pt, margin: (x: 120pt, y: 160pt))
+#set page(width: 1920pt, height: 1080pt, margin: (x: 120pt, top: 160pt, bottom: 20pt))
 #set table.hline(stroke: .6pt)
 
 #let _table(
@@ -83,9 +83,13 @@
 
 #v(20pt)
 
-z1
+#set text(fill: rgb("#455a64"))
 
-z2
+For Italics, English uses the italic fonts, instead of pseudo-italics.
+
+Titles use serif fonts, and body text uses sans-serif fonts.
+
+汉文没有使用斜体的习惯，只使用伪粗体。
 
 #let _line_start = 55%
 
