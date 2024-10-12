@@ -42,6 +42,6 @@ Thanks for:
 
 ## Feedback
 
-If you have any problem or meet some troubles when using Violet, it's better for you to send an issue to me at [here](https://github.com/chillcicada/typora-violets/issues). Well, you can also commit your own debug code and even pull request to me.
+If you have any problem or meet some troubles when using Violet, it's better for you to send an issue to me at [here](https://github.com/chillcicada/typora-themes/issues). Well, you can also commit your own debug code and even pull request to me.
 
 Just enjoy it!
