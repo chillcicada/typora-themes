@@ -1,3 +1,7 @@
+#import "@preview/cuti:0.2.1": show-cn-fakebold
+
+#show: show-cn-fakebold
+
 #set page(width: 1920pt, height: 1080pt, margin: (x: 120pt, top: 160pt, bottom: 20pt))
 #set table.hline(stroke: .6pt)
 
@@ -89,7 +93,7 @@ For Italics, English uses the italic fonts, instead of pseudo-italics.
 
 Titles use serif fonts, and body text uses sans-serif fonts.
 
-汉文没有使用斜体的习惯，只使用伪粗体。
+汉文没有使用斜体的习惯，只使用*伪粗体*。
 
 #let _line_start = 55%
 
@@ -105,4 +109,4 @@ Titles use serif fonts, and body text uses sans-serif fonts.
 
 *Not All Fonts Are Released Under Free Licenses*
 
-Made with Typst and Love By ChillCicada
+Made with Typst and Love by ChillCicada
