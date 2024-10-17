@@ -1,7 +1,5 @@
 #import "@preview/cuti:0.2.1": show-cn-fakebold
 
-#show: show-cn-fakebold
-
 #set page(width: 1920pt, height: 1080pt, margin: (x: 120pt, top: 160pt, bottom: 20pt))
 #set table.hline(stroke: .6pt)
 
@@ -89,6 +87,8 @@
 
 #set text(fill: rgb("#455a64"))
 
+#show: show-cn-fakebold
+
 For Italics, English uses the italic fonts, instead of pseudo-italics.
 
 Titles use serif fonts, and body text uses sans-serif fonts.
@@ -100,7 +100,7 @@ Titles use serif fonts, and body text uses sans-serif fonts.
 #line(
   stroke: (thickness: 1pt, paint: black),
   start: (_line_start, 0%),
-  length: 100% - _line_start,
+  length: 101% - _line_start,
 )
 
 #v(-25pt)
@@ -109,4 +109,4 @@ Titles use serif fonts, and body text uses sans-serif fonts.
 
 *Not All Fonts Are Released Under Free Licenses*
 
-Made with Typst and Love by ChillCicada
+Made with Typst and Love by ChillCicada #sym.copyright MIT

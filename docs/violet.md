@@ -11,7 +11,7 @@ A theme for Typora, named `Violet`, made by [cc](https://github.com/chillcicada)
 
 ~~More information about the `typora-theme-violet` can be found at the **deprecated** [repo](https://github.com/chillcicada/typora-theme-violet).~~
 
-Violet, also deemed as purple, is a [Typora](https://typora.io/) theme for self-use made by the [author](https://github.com/chillcicada) during the summer vacation. Violet theme is a ~~girly~~ theme based on light purple (#F3E5F5). And users can freely change it according to your personal needs.
+Violet, also deemed as purple, is a [Typora](https://typora.io/) theme for self-use made by [me](https://github.com/chillcicada) during the summer vacation in 2023. Violet theme is a ~~girly~~ theme based on light purple (#F3E5F5). And users can freely change it according to your personal needs.
 
 Both Chinese and English fonts are prohibited for commercial use.
 

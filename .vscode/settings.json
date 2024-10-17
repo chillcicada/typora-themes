@@ -20,10 +20,16 @@
     "Readme.md": true,
     "whitey.css": true,
     "flake.lock": true,
-    ".envrc": true
+    ".envrc": true,
+    ".direnv": true
   },
   "explorerExclude.backup": {},
+
   "cSpell.enabled": false,
+
+  "files.associations": {
+    "justfile": "makefile"
+  },
 
   // typst config
   "[typst]": {
