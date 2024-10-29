@@ -1,0 +1,29 @@
+@media print {
+  html {
+    font-size: 1.25rem;
+  }
+
+  :root {
+    --title-color: #000;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    page-break-inside: avoid;
+    word-wrap: break-word;
+  }
+
+  #write {
+    max-width: 100%;
+  }
+
+  @page {
+    /* PDF output size */
+    size: A3;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

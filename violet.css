@@ -22,6 +22,9 @@
 /* Image */
 @import "./violet/image.css";
 
+/* #region Print */
+@import "./violet/print.css";
+
 /* Variables */
 :root {
   --bg-color: #f3e5f5;
@@ -157,33 +160,6 @@ body > *:last-child {
 .sidebar-content-content {
   font-size: 0.9rem;
   color: var(--text-color);
-}
-
-/* #region Print */
-@media print {
-  html {
-    font-size: 1.25rem;
-  }
-
-  table {
-    page-break-inside: avoid;
-  }
-
-  pre {
-    page-break-inside: avoid;
-    word-wrap: break-word;
-  }
-
-  #write {
-    max-width: 100%;
-  }
-
-  @page {
-    /* PDF output size */
-    size: A3;
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
 /* PageBreak when h2 */
