@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 >
-> This repo is my typora themes collection folder. It is used to store my self made themes and some other themes that I like.
+> This repo is my typora themes collection folder, which is based on the typora themes folder. It is used to store my self made themes and some other themes that I like. So you can clone this repo to your typora themes folder and use the themes in your typora.
 
 The built-in themes have been excluded by `.gitignore` file.
 

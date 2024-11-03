@@ -16,6 +16,16 @@
     word-wrap: break-word;
   }
 
+  /* PageBreak when h2 */
+  /* when u dont use this u can comment it */
+  h2 {
+    page-break-before: always;
+  }
+
+  h2:first-of-type {
+    page-break-before: avoid;
+  }
+
   #write {
     max-width: 100%;
   }
