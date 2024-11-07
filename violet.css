@@ -27,7 +27,7 @@
   --bg-color: #f3e5f5;
   --side-bar-bg-color: #f2f4ff;
   --title-color: #b388ff;
-  --text-color: #212121;
+  --text-color: var(--black);
   --select-text-bg-color: #fafafa;
   --item-hover-bg-color: #fce4ec;
   --control-text-color: var(--side-bar-bg-color);
@@ -88,6 +88,9 @@
     "仓耳今楷03-W03", serif;
 
   --monospace: "Roboto Mono", "LXGWWenKaiMono-Regular", monospace;
+
+  /* TODO: maybe i should add font package? */
+  --math: "New Computer Modern", "LXGWWenKaiMono-Regular", serif;
 }
 
 /* Reset */
@@ -97,6 +100,10 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-rendering: optimizelegibility;
+  font-family: var(--text);
+}
+
+text {
   font-family: var(--text);
 }
 
@@ -160,7 +167,45 @@ body > *:last-child {
 }
 
 /* Print */
-@import "./violet/print.css";
+@media print {
+  html {
+    font-size: 1.25rem;
+  }
+
+  :root {
+    --title-color: var(--black);
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    page-break-inside: avoid;
+    word-wrap: break-word;
+  }
+
+  /* PageBreak when h2 */
+  /* when u dont use this u can comment it */
+  h2 {
+    page-break-before: always;
+  }
+
+  h2:first-of-type {
+    page-break-before: avoid;
+  }
+
+  #write {
+    max-width: 100%;
+  }
+
+  @page {
+    /* PDF output size */
+    size: A3;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 /* TOC */
 #write a.md-toc-inner {
