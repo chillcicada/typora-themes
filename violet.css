@@ -561,7 +561,6 @@ img[alt|="shadow"] {
 
 /* Underline */
 #write u {
-  padding: 1px;
   color: var(--text-color);
 }
 
