@@ -560,9 +560,6 @@ img[alt|="shadow"] {
 }
 
 /* Underline */
-#write u {
-  color: var(--text-color);
-}
 
 /* RT */
 #write rt {
