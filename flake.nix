@@ -30,21 +30,9 @@
         default = pkgs.mkShell {
           # Pinned packages available in the environment
           packages = with pkgs; [
-            curl
-            git
-            jq
-            wget
             just
-            nixpkgs-fmt
-
             typst
-            tinymist
-            typstyle
           ];
-
-          # A hook run every time you enter the environment
-          shellHook = ''
-          '';
         };
       });
     };

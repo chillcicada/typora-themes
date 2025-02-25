@@ -3,7 +3,7 @@ author: ChillCicada
 version: 0.1.0
 ---
 
-# Violet
+# Typora-Theme-Violet
 
 ## Introduction
 
@@ -19,15 +19,13 @@ Both Chinese and English fonts are prohibited for commercial use.
 
 ### Typography
 
-![](../.github/_imgs/typography.png)
+![typography](https://img.chillcicada.com/i/2025/01/21/678f1e1b0a92a.png)
 
 ### Color Scheme
 
 TODO
 
 ## Snapshot
-
-![](../.github/_imgs/snapshot_2024-10-12_violet.png)
 
 ## Acknowledgment
 

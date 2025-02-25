@@ -28,6 +28,7 @@
   --side-bar-bg-color: #f2f4ff;
   --title-color: #b388ff;
   --text-color: var(--black);
+  --source-code-color: #37474f;
   --select-text-bg-color: #fafafa;
   --item-hover-bg-color: #fce4ec;
   --control-text-color: var(--side-bar-bg-color);
@@ -683,3 +684,10 @@ footer.ty-footer {
   color: var(--alert-caution-text-color);
 }
 /* #endregion Github Alert */
+
+/* #region typora source mode */
+#typora-source {
+  font-family: "Fira Code", Consolas, "Lucida Console", "Courier", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--source-code-color);
+}
+/* #endregion typora source mode */

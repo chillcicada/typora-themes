@@ -12,10 +12,10 @@
 /whitey.css
 
 # temp
-.temp
-
-# js
-node_modules
+.temp/
 
 # nix
-.direnv
+.direnv/
+
+# media
+*.png
