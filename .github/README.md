@@ -16,6 +16,12 @@ If you want to use some of the themes, you can download the `.css` file and the 
 
 - [violet](../docs/violet.md): self made theme with the color `#F3E5F5`.
 
+## Fonts
+
+```bash
+typst fonts --font-path=./violet/fonts
+```
+
 ## License
 
 MIT

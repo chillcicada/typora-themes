@@ -108,7 +108,7 @@ text {
   font-family: var(--text);
 }
 
-// for better line spacing, it's recommended to enable the display of <br/>
+/* for better line spacing, it's recommended to enable the display of <br/> */
 body {
   max-width: 1000px;
   -webkit-text-size-adjust: 100%;
@@ -157,9 +157,7 @@ body > *:last-child {
 .typora-node #typora-sidebar {
   color: var(--text-color);
   background-color: var(--side-bar-bg-color);
-  shadow: 3px 0px 10px var(--shadow-color);
   opacity: 0.5;
-  backdrop: blur(2px);
 }
 
 .sidebar-content-content {
@@ -404,7 +402,6 @@ blockquote {
 
 /* Table */
 table {
-  align: center;
   margin-bottom: 1.25rem;
   margin: 0.8em 0;
 }
@@ -486,7 +483,7 @@ table td:last-child {
   background-color: var(--image-btn-bf-bg-color);
 }
 
-// Picture Shadow
+/* Picture Shadow */
 .md-image > .md-meta {
   border-radius: 4px;
   padding: 2px 0 0 4px;
@@ -687,7 +684,8 @@ footer.ty-footer {
 
 /* #region typora source mode */
 #typora-source {
-  font-family: "Fira Code", Consolas, "Lucida Console", "Courier", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Fira Code", Consolas, "Lucida Console", "Courier", monospace,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--source-code-color);
 }
 /* #endregion typora source mode */

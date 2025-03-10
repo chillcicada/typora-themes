@@ -19,24 +19,9 @@
     "pixyll.css": true,
     "Readme.md": true,
     "whitey.css": true,
-    "flake.lock": true,
-    ".envrc": true,
-    ".direnv": true
-  },
-  "explorerExclude.backup": {},
-
-  "cSpell.enabled": false,
-
-  "files.associations": {
-    "justfile": "makefile"
   },
 
-  // typst config
-  "[typst]": {
-    "editor.formatOnSave": true
-  },
   "tinymist.fontPaths": [
     "violet/fonts"
   ],
-  "tinymist.formatterMode": "typstyle"
 }
